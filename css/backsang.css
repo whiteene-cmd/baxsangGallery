@@ -1,0 +1,320 @@
+#wrap {
+  overflow: hidden;
+}
+#mainVisual .more{color: #f8f8f8;}
+#mainVisual .more:hover {
+  color: #000000;
+}
+#mainVisual .more::before{
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(248, 248, 248, 0.3);
+}
+#mainVisual .more:hover::before {
+    background: #fff;
+  border: 2px solid rgba(248, 248, 248, 1);
+}
+
+section {
+  margin-bottom: 100px;
+}
+section .secTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+section .secTitle h3 {
+  font-size: 52px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+section .secTitle span {
+  font-size: 20px;
+  display: block;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 30px;
+  color: #c9ab81;
+}
+
+
+/* 메인비주얼 영역 */
+#mainVisual{
+  margin-bottom: 130px;
+}
+.mainSwiper {
+  position: relative;
+  width: 100%;
+  height: 767px;
+}
+.swiper-pagination {
+  display: none;
+}
+.visual1 {
+  background: url(../img/imgi_8_20240509_141556_781.jpg) no-repeat center/cover;
+}
+.visual2 {
+  background: url(../img/imgi_9_20250718_140357_223.jpg) no-repeat center/cover;
+}
+.visual3 {
+  background: url(../img/imgi_10_20240502_133347_809.jpg) no-repeat center/cover;
+}
+
+.mainSwiper .textBox {
+  opacity: 1;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  display: flex;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  flex-direction: column;
+}
+.mainSwiper .textBox > p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.mainSwiper .textBox > h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+/* insight영역 */
+#insightArea {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#insightArea .innerBox {
+    width: 100%;
+  display: flex;
+  gap: 50px;
+}
+/* #insightArea .innerBox .pageNum {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  font-size: 28px;
+  color: #929292;
+  gap: 5px;
+}
+#insightArea .innerBox .pageNum .changeNum {
+  font-family: "Bebas Neue", sans-serif;
+  color: #211e1f;
+  font-size: 30px;
+}
+#insightArea .innerBox .pageNum .fixNum {
+  font-family: "Bebas Neue", sans-serif;
+  color: #c9ab81;
+  font-size: 20px;
+} */
+.istwrap {
+    width: 100%;
+    padding: 0 200px;
+    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-bottom: 50px;
+}
+.ist {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; 
+  display: inline-block;
+}
+
+.ist .revealClip {  
+  display: block;
+  clip-path: inset(0 100% 0 0);
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.ist .istTxt span {
+  display: block;
+  font-size: 20px;
+  color: #c9ab81;
+  margin-bottom: 20px;
+}
+.ist .istTxt p {
+  font-size: 24px;
+}
+.ist .istTxt p strong {
+  font-size: 20px;
+}
+#insightArea .more {
+  margin: auto;
+}
+
+/* 어바웃 영역 */
+#aboutArea {
+  position: relative;
+  height: 800px;
+}
+#aboutArea > figure{
+  /* width: 800px;
+  height: 600px; */
+  width: 46%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+  z-index:2;
+}
+#aboutArea > figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#aboutArea .innerBox {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 80%;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+#aboutArea .innerBox .secTitle {
+  text-align: left;
+}
+#aboutArea .innerBox .secTitle h3 {
+  margin-bottom: 30px;
+}
+#aboutArea .innerBox .infoWrap {
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  padding: 20px;
+  z-index: 1;
+}
+#aboutArea .innerBox .infoWrap > p {
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.bdDeco1 {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  font-size: 138px;
+  line-height: 0;
+  font-family: "Bebas Neue", sans-serif;
+  color: #f8f8f8;
+}
+.bdDeco2 {
+  position: absolute;
+  bottom: 1%;
+  right: 2%;
+  font-size: 200px;
+  text-align: right;
+  letter-spacing: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1;
+  color: #f8f8f8;
+  -webkit-text-stroke: 2px rgba(141, 141, 141, 0.1);
+}
+
+/* artistArea */
+#artistArea .innerBox {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+#artistArea .innerBox li {
+  position: relative;
+  width: 320px;
+  height: 380px;
+  overflow: hidden;
+}
+#artistArea .innerBox li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+#artistArea .innerBox li .hoverTxt {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: transform 0.6s ease, opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 100;
+}
+#artistArea .innerBox li:hover .hoverTxt {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+#artistArea .innerBox li .hoverTxt p:first-child {
+  font-style: italic;
+  font-size: 28px;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 15px;
+}
+#artistArea .innerBox li .hoverTxt p:last-child {
+  font-size: 18px;
+}
+
+#artistArea .more {
+  margin: 0 auto;
+}
+
+/* news */
+#news {
+  padding: 150px;
+  background-color: #f8f8f8;
+  margin-bottom: 50px;
+}
+#news .innerBox {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+#news .innerBox li {
+  display: flex;
+  height: 100px;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: 1px solid #000;
+}
+#news .innerBox li > span {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+}
+#news .innerBox li:first-child {
+  border-top: 1px solid #000;
+}
+#news .innerBox li > p:nth-child(2) {
+  width: 55%;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#news .innerBox li .date {
+  color: #c9ab81;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+}
+#news img{
+    position: relative;
+    left: -15px;
+    transition: left 0.2s ease;
+    cursor: pointer;
+}
+#news img:hover{
+    left: 0;
+}
+#news .more {
+    z-index: 3;
+  margin: 0 auto;
+}
+

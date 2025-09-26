@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/headerFooter.css" />
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/contect.js" defer></script>
+    <script src="js/headerFooter.js" defer></script>
+
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/3da96badf7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      
+      
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <h1 class="blind">갤러리 백상 로고</h1>
+          </a>
+        </div>
+        <nav>
+          <ul class="gnb">
+            <li class="gnbmain" data-hover="갤러리 소개">
+              <a href="baxsang_about.html"><span>ABOUT</span></a>
+              <div class="gnbInner">
+                <ul class="gnbsub">
+                  <li data-hover="갤러리 소개">
+                    <a href="baxsang_about.html"
+                      ><span>GREETING</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                  <li data-hover="갤러리 위치">
+                    <a href="baxsang_location.html"
+                      ><span>LOCATION</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnbmain" data-hover="진행전시">
+              <a href="baxsang_exhibition"><span>EXHIBITION</span></a>
+            </li>
+            <li class="gnbmain" data-hover="보유그림">
+              <a href="baxsang_collection.html"><span>COLLECTION</span></a>
+            </li>
+            <li class="gnbmain" data-hover="정보">
+              <a href="baxsang_insight.html"><span>MAGAZINE</span></a>
+              <div class="gnbInner">
+                <ul class="gnbsub">
+                  <li data-hover="깊이보기">
+                    <a href="baxsang_insight.html"
+                      ><span>INSIGHT</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                  <li data-hover="아티스트">
+                    <a href="baxsang_artist.html"
+                      ><span>ARTIST</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnbmain" data-hover="알림">
+              <a href="baxsang_notice.html"><span>INFO</span></a>
+              <div class="gnbInner">
+                <ul class="gnbsub">
+                  <li data-hover="소식">
+                    <a href="baxsang_notice.html"
+                      ><span>NOTICE</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                  <li data-hover="고객문의">
+                    <a href="baxsang_contect.html"
+                      ><span>CONTECT</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnbmain menuiIco">
+              <a href="#"><img src="img/imgi_1_hd-menubtn.svg" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="menuArea">
+        <div class="menuTop">
+          <div class="sublogo">
+            <h1 class="blind">서브로고</h1>
+          </div>
+          <img src="img/close_w.png" alt="닫기버튼" class="closeBtn" />
+        </div>
+        <div class="menulist">
+          <ul>
+            <li class="menu on">
+              <a href="baxsang_about.html">
+                <small class="num">01</small>
+                <p class="menuTitle" data-hover="갤러리 소개">ABOUT</p>
+                <div class="menuPic01"></div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="baxsang_exhibition.html">
+                <small class="num">02</small>
+                <p class="menuTitle" data-hover="진행전시">EXHIBITION</p>
+                <div class="menuPic02"></div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="baxsang_collection.html">
+                <small class="num">03</small>
+                <p class="menuTitle" data-hover="보유그림">COLLECTION</p>
+                <div class="menuPic03"></div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="baxsang_magazine.html">
+                <small class="num">04</small>
+                <p class="menuTitle" data-hover="정보">MAGAZINE</p>
+                <div class="menuPic04"></div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="baxsang_notice.html">
+                <small class="num">05</small>
+                <p class="menuTitle" data-hover="알림">INFO</p>
+                <div class="menuPic05"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menusub">
+          <div class="sub01">
+            <a href="baxsang_notice.html" data-hover="소식">NOTICE</a>
+            <a href="baxsang_contect.html" data-hover="고객문의">CONTECT</a>
+          </div>
+          <div class="sub02" data-hover="진행전시">
+            <a href="baxsang_exhibition.html">EXHIBITION</a>
+          </div>
+          <div class="sub03" data-hover="보유그림">
+            <a href="baxsang_collection.html">COLLECTION</a>
+          </div>
+          <div class="sub04">
+            <a href="baxsang_insight.html" data-hover="깊이보기">INSIGHT</a>
+            <a href="baxsang_artist.html" data-hover="아티스트">ARTIST</a>
+          </div>
+          <div class="sub05">
+            <a href="baxsang_about.html">GREETING</a>
+            <a href="baxsang_location.html">LOCATION</a>
+          </div>
+        </div>
+        <p class="backTxt">BAEXANG</p>
+      </div>
+      <!-- 헤더 끝 -->
+    </div>
+
+    <main>
+        <div class="secTitle">
+        <span>ART DESIGN IN BAEXANG</span>
+        <h2 class="fill">CONTACT</h2>
+      </div>
+      <div class="imageWrap">
+          <div class="imageArea">
+            <div class="visual">
+                <img src="img/contact-topbnr-logo.png" alt="백상 로고">
+                <p>고객님의 소중한 의견을 작성해주시면 문의하신 내용은 <br> 메일 또는 전화를 통해 자세한 답변을 드립니다.</p>
+            </div>
+      </div>
+        
+      </div>
+      <div class="qna">
+            <div class="inquiry">
+                <h3>INQUIRY ITEM</h3>
+                <fieldset>
+                    <label>
+                        <input type="radio" name="cricle" value="0" checked>
+                        전시기획
+                    </label>
+                    <label>
+                        <input type="radio" name="cricle" value="1" checked>
+                        주문제작
+                    </label>
+                    <label>
+                        <input type="radio" name="cricle" value="2" checked>
+                        단체관람
+                    </label>
+                    <label>
+                        <input type="radio" name="cricle" value="3" checked>
+                        렌탈
+                    </label>
+                    <label>
+                        <input type="radio" name="cricle" value="1" checked>
+                        구매
+                    </label>
+                </fieldset>
+            </div>
+            <div class="namePhone">
+                <div class="name">
+                    <p>NAME <span>*</span></p>
+                    <input type="text" placeholder="이름을 입력해주세요.">
+                </div>
+                <div class="phone">
+                    <p>PHONE <span>*</span></p>
+                    <input type="text" placeholder="연락처를 입력해주세요.(-없이 숫자만 입력)">
+                </div>
+            </div>
+            <div class="email">
+                <p>E-MAILL <span>*</span></p>
+                <div class="choiceMail">
+                    <input type="text">@
+                    <input type="text">
+                    <div  class="mailAccodian">
+                        <ul>
+                            <li>직접입력
+                                <img src="img/ico_arrow_down.png" alt="">
+                            </li>
+                            <li class="panel">naver.com</li>
+                            <li class="panel">hanmail.net</li>
+                            <li class="panel">daum.net</li>
+                            <li class="panel">nate.com</li>
+                            <li class="panel">google.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <p>TITLE</p>
+                <input type="text" placeholder="문의하실 제목을 입력해주세요.">
+            </div>
+            <div class="message">
+                <p>MESSAGE <span>*</span></p>
+                <textarea name="" id="" placeholder="문의하실 내용을 입력해주세요."></textarea>
+            </div>
+            <div class="sendArea">
+                <div class="privacyAgree">
+                    <input type="checkbox" name="agree" value="1">
+                    <p><strong>개인정보 수집 및 이용</strong>에 동의합니다.</p>
+                </div>
+                <div class="more send">
+                  <i class="fa-solid fa-plus"></i>
+                  <p>SEND</p>
+                </div>
+              
+            </div>
+        </div>
+    </main>
+    <!-- 푸터 시작 -->
+    <footer>
+      <div class="innerBox">
+        <div class="fooLeft">
+          <div class="logo">
+            <a href="index.html">
+              <h1 class="blind">logo</h1>
+            </a>
+          </div>
+          <div class="textBox">
+            <div class="privacy">
+              <p>개인정보 처리 방침</p>
+              <span>이용약관</span>
+            </div>
+            <div class="owner">
+              <p>대표자: 권순상</p>
+              <span>사업자 등록 번호:137-81-30071</span>
+            </div>
+            <div class="address">
+              <p>주소:경기도 고양시 일산동구 산황로 178-15</p>
+              <p>TEL : 070-4156-9541</p>
+              <span>FAX : 031-977-9540</span>
+            </div>
+          </div>
+          <div class="accordion">
+            <ul class="sitego">
+              <li>
+                <span>Family Site</span>
+                <img src="img/down-arrow_op3.png" alt="" class="angle" />
+              </li>
+              <li class="shop">
+                <span>백상쇼핑몰</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fooRight">
+          <h2>CONTECT US</h2>
+          <div class="write">
+            <div class="namephone">
+              <input type="text" placeholder="NAME" />
+              <input type="text" placeholder="PHONE" />
+            </div>
+            <input type="text" placeholder="E-MAIL" />
+            <input type="text" placeholder="TITLE" />
+            <textarea type="text">
+              MESSAGE
+            </textarea>
+          </div>
+          <div class="more">
+            <i class="fa-solid fa-plus"></i>
+            <p>VIEW MORE</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <aside class="scrollUp">
+      <p>문의하기<i class="fa-solid fa-comment-dots"></i></p>
+      <i class="fa-solid fa-arrow-up"></i>
+    </aside>
+  </body>
+</html>

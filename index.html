@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GalleryBeaksang</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/backsang.css" />
+    <link rel="stylesheet" href="css/headerFooter.css">
+
+    <script src="js/baxsangMain.js" defer></script>
+    <script src="js/headerFooter.js" defer></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/3da96badf7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="logo"><a href="index.html">
+          <h1 class="blind">갤러리 백상 로고</h1>
+        </a></div>
+        <nav>
+          <ul class="gnb">
+            <li class="gnbmain" data-hover="갤러리 소개">
+              <a href="baxsang_about.html"><span>ABOUT</span></a>
+              <div class="gnbInner">
+                <ul class="gnbsub">
+                  <li data-hover="갤러리 소개">
+                    <a href="baxsang_about.html"
+                      ><span>GREETING</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                  <li data-hover="갤러리 위치">
+                    <a href="baxsang_location.html"
+                      ><span>LOCATION</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnbmain" data-hover="진행전시">
+              <a href="baxsang_exhibition.html"><span>EXHIBITION</span></a>
+            </li>
+            <li class="gnbmain" data-hover="보유그림">
+              <a href="baxsang_collection.html"><span>COLLECTION</span></a>
+            </li>
+            <li class="gnbmain" data-hover="정보">
+              <a href="baxsang_insight.html"><span>MAGAZINE</span></a>
+              <div class="gnbInner">
+                <ul class="gnbsub">
+                  <li data-hover="깊이보기">
+                    <a href="baxsang_insight.html"
+                      ><span>INSIGHT</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                  <li data-hover="아티스트">
+                    <a href="baxsang_artist.html"
+                      ><span>ARTIST</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnbmain" data-hover="알림">
+              <a href="baxsang_notice.html"><span>INFO</span></a>
+              <div class="gnbInner">
+                <ul class="gnbsub">
+                  <li data-hover="소식">
+                    <a href="baxsang_notice.html"
+                      ><span>NOTICE</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                  <li data-hover="고객문의">
+                    <a href="baxsang_contect.html"
+                      ><span>CONTECT</span
+                      ><img src="img/imgi_12_wht-arrow-next.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gnbmain menuiIco">
+              <a href="#"><img src="img/imgi_1_hd-menubtn.svg" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="menuArea">
+        <div class="menuTop">
+          <div class="sublogo">
+            <h1 class="blind">서브로고</h1>
+          </div>
+          <img src="img/close_w.png" alt="닫기버튼" class="closeBtn" />
+        </div>
+        <div class="menulist">
+          <ul>
+            <li class="menu on">
+              <a href="baxsang_about.html">
+                <small class="num">01</small>
+                <p class="menuTitle" data-hover="갤러리 소개">ABOUT</p>
+                <div class="menuPic01"></div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="baxsang_exhibition.html">
+                <small class="num">02</small>
+                <p class="menuTitle" data-hover="진행전시">EXHIBITION</p>
+                <div class="menuPic02"></div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="baxsang_collection.html">
+                <small class="num">03</small>
+                <p class="menuTitle" data-hover="보유그림">COLLECTION</p>
+                <div class="menuPic03"></div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="baxsang_magazine.html">
+                <small class="num">04</small>
+                <p class="menuTitle" data-hover="정보">MAGAZINE</p>
+                <div class="menuPic04"></div>
+              </a>
+            </li>
+            <li class="menu">
+              <a href="baxsang_notice.html">
+                <small class="num">05</small>
+                <p class="menuTitle" data-hover="알림">INFO</p>
+                <div class="menuPic05"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menusub">
+          <div class="sub01">
+            <a href="baxsang_notice.html" data-hover="소식">NOTICE</a>
+            <a href="baxsang_contect.html" data-hover="고객문의">CONTECT</a>
+          </div>
+          <div class="sub02" data-hover="진행전시">
+            <a href="baxsang_exhibition.html">EXHIBITION</a>
+          </div>
+          <div class="sub03" data-hover="보유그림">
+            <a href="baxsang_collection.html">COLLECTION</a>
+          </div>
+          <div class="sub04">
+            <a href="baxsang_insight.html" data-hover="깊이보기">INSIGHT</a>
+            <a href="baxsang_artist.html" data-hover="아티스트">ARTIST</a>
+          </div>
+          <div class="sub05">
+            <a href="baxsang_about.html">GREETING</a>
+            <a href="baxsang_location.html">LOCATION</a>
+          </div>
+        </div>
+
+        <p class="backTxt">BAEXANG</p>
+      </div>
+      <!-- 헤더 끝 -->
+
+      <!-- 메인비주얼 영역 -->
+      <section id="mainVisual" class="mainSwiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide visual1">
+            <div class="textBox">
+              <p>Mar 05 - Jun 30 2024</p>
+              <h2>언-프린티드 아이디어 Un-printed Ideas</h2>
+              <a href="baxsang_exhibition.html">
+                <div class="more">
+                  <i class="fa-solid fa-plus"></i>
+                  <p>VIEW MORE</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide visual2">
+            <div class="textBox">
+              <p>Jul 11 - Dec 31 2025</p>
+              <h2>클림트&고흐 그리고 인상주의展</h2>
+              <div class="more">
+                <i class="fa-solid fa-plus"></i>
+                <p>VIEW MORE</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide visual3">
+            <div class="textBox">
+              <p>Jan 01 2024 - Jul 10 2025</p>
+              <h2>3개의 열정, 3인의 인상파 거장을 마주하다</h2>
+              <a href="baxsang_exhibition.html">
+                <div class="more">
+                  <i class="fa-solid fa-plus"></i>
+                  <p>VIEW MORE</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <section id="insightArea">
+        <div class="secTitle">
+          <span>백상의 다채로운 작품을 경험하세요</span>
+          <h3>INSIGHT</h3>
+        </div>
+        <div class="innerBox">
+
+          <div class="istwrap">
+            <div class="ist ist1">
+              <a href="baxsang_insight.html">
+                <img src="img/imgi_15_d7daf56c_11.jpg" alt="갤러리오픈" class="revealClip"/>
+                <div class="istTxt">
+                  <span>김진부[기자]</span>
+                  <p>
+                    고양시 민간 미술관 '갤러리백상', 클림트-고흐 레플리카 특별전
+                    오픈 <strong>(2025.07.17)</strong>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="ist ist2">
+              <a href="baxsang_insight.html">
+                <img src="img/imgi_16_333d5303_1.jpg" alt="인상주의기반" class="revealClip"/>
+                <div class="istTxt">
+                  <span>이한빛[칼럼니스트]</span>
+                  <p>
+                    남성 피사체에 집중한 화가, 인상주의의 기반이 되다
+                    <strong>(2025.08.06)</strong>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="ist ist3">
+              <a href="baxsang_insight.html">
+                <img
+                  src="img/imgi_13_68bbac65_104263_87521_115.jpg"
+                  alt="갤러리공개개관" class="revealClip"
+                />
+                <div class="istTxt">
+                  <span>김진부[기자]</span>
+                  <p>
+                    갤러리 백상, 예술가치 체험하는 공간 개관
+                    <strong>(2023.12.21)</strong>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="ist ist4">
+              <a href="baxsang_insight.html">
+                <img src="img/imgi_14_a5c0fafa_1.jpg" alt="150주년기념" class="revealClip"/>
+                <div class="istTxt">
+                  <span>김진부[기자]</span>
+                  <p>
+                    고양시 동네 미술관 '갤러리백상', 킨텍스 2전시장서 열리는
+                    '고양국제아트페어' 참여 <strong>(2024.10.11)</strong>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="baxsang_insight.html">
+          <div class="more">
+            <i class="fa-solid fa-plus"></i>
+            <p>VIEW MORE</p>
+          </div>
+        </a>
+      </section>
+      <section id="aboutArea">
+        <figure><img src="img/imgi_16_about-img01.png" alt="" /></figure>
+        <span class="bdDeco1">BAXSANG</span>
+        <div class="innerBox">
+          <div class="infoWrap">
+            <div class="secTitle">
+              <span>ART·DESIGN IN</span>
+              <h3>ABOUT BAXSANG</h3>
+            </div>
+            <p>
+              백상은 모두의 예술적 지평이 넓어 질 수 있도록 양질의 문화 콘텐츠를
+              <br />
+              제공하며, 다양한 변신을 추구하여 대중들에게 접근성을 <br />
+              높이겠습니다.
+            </p>
+            <a href="baxsang_about.html">
+              <div class="more">
+                <i class="fa-solid fa-plus"></i>
+                <p>VIEW MORE</p>
+              </div>
+            </a>
+          </div>
+          <span class="bdDeco2">ART <br />DESIGN</span>
+        </div>
+      </section>
+      <section id="artistArea">
+        <div class="secTitle">
+          <span>백상과 함께한 작가를 소개합니다.</span>
+          <h3>ARTIST</h3>
+        </div>
+        <ul class="innerBox">
+          <li>
+            <img src="img/imgi_17_artist.jpg" alt="구스타프 클림트" />
+            <a class="hoverTxt" href="baxsang_artist.html">
+              <p>구스타프 클림트</p>
+              <p>Gustav Klimt</p>
+            </a>
+          </li>
+          <li>
+            <img src="img/imgi_18_artist.jpg" alt="클로드 모네" />
+            <a class="hoverTxt" href="baxsang_artist.html">
+              <p>클로드 모네</p>
+              <p>Claude Mone</p>
+            </a>
+          </li>
+          <li>
+            <img src="img/imgi_19_artist.jpg" alt="빈센트 반 고흐" />
+            <a class="hoverTxt" href="baxsang_artist.html">
+              <p>빈센트 반 고흐</p>
+              <p>Vincent van Gogh</p>
+            </a>
+          </li>
+          <li>
+            <img src="img/imgi_20_artist.jpg" alt="구스타브 카유보트" />
+            <a class="hoverTxt" href="baxsang_artist.html">
+              <p>구스타브 카유보트</p>
+              <p>Gustave Caillebotte</p>
+            </a>
+          </li>
+        </ul>
+        <a href="baxsang_artist.html">
+          <div class="more">
+            <i class="fa-solid fa-plus"></i>
+            <p>VIEW MORE</p>
+          </div>
+        </a>
+      </section>
+      <section id="news">
+        <div class="secTitle">
+          <span>백상의 최신 소식을 전달드립니다.</span>
+          <h3>NEWS & NOTICE</h3>
+        </div>
+        <ul class="innerBox">
+          <li>
+            <span>NEWS</span>
+            <p>유지유치원 단체 관람</p>
+            <p class="date">Aug 20 2025</p>
+            <a class="arrowBtn" href="baxsang_notice_info1.html"
+              ><img src="img/imgi_21_gry-arrow-next.png" alt="바로가기"
+            /></a>
+          </li>
+          <li>
+            <span>NEWS</span>
+            <p>
+              2025년 제13회 성폭력예방을 위한 미술공모전 『성폭력 없는 안전한
+              세상 그리기』
+            </p>
+            <p class="date">Aug 20 2025</p>
+            <a class="arrowBtn" data-notfound
+              ><img src="img/imgi_21_gry-arrow-next.png" alt="바로가기"
+            /></a>
+          </li>
+          <li>
+            <span>NEWS</span>
+            <p>2025 코리아 영아트페스티벌 Korea Young Art Festival</p>
+            <p class="date">Aug 20 2025</p>
+            <a class="arrowBtn" data-notfound
+              ><img src="img/imgi_21_gry-arrow-next.png" alt="바로가기"
+            /></a>
+          </li>
+        </ul>
+        <a href="baxsang_insight.html">
+          <div class="more">
+            <i class="fa-solid fa-plus"></i>
+            <p>VIEW MORE</p>
+          </div>
+        </a>
+      </section>
+    </div>
+
+    <footer>
+      <div class="innerBox">
+        <div class="fooLeft">
+          <div class="logo"><a href="index.html">
+            <h1 class="blind">logo</h1>
+          </a></div>
+          <div class="textBox">
+            <div class="privacy">
+              <p>개인정보 처리 방침</p>
+              <span>이용약관</span>
+            </div>
+            <div class="owner">
+              <p>대표자: 권순상</p>
+              <span>사업자 등록 번호:137-81-30071</span>
+            </div>
+            <div class="address">
+              <p>주소:경기도 고양시 일산동구 산황로 178-15</p>
+              <p>TEL : 070-4156-9541</p>
+              <span>FAX : 031-977-9540</span>
+            </div>
+          </div>
+          <div class="accordion">
+            <ul class="sitego">
+              <li>
+                <span>Family Site</span>
+                <img src="img/down-arrow_op3.png" alt="" class="angle" />
+              </li>
+              <li class="shop">
+                <span>백상쇼핑몰</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fooRight">
+          <h2>CONTECT US</h2>
+          <div class="write">
+            <div class="namephone">
+              <input type="text" placeholder="NAME" />
+              <input type="text" placeholder="PHONE" />
+            </div>
+            <input type="text" placeholder="E-MAIL" />
+            <input type="text" placeholder="TITLE" />
+            <textarea type="text">
+              MESSAGE
+            </textarea>
+          </div>
+          <a href="baxsang_contect.html">
+            <div class="more">
+              <i class="fa-solid fa-plus"></i>
+              <p>VIEW MORE</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <aside class="scrollUp">
+      <p>문의하기<i class="fa-solid fa-comment-dots"></i></p>
+      <i class="fa-solid fa-arrow-up"></i>
+    </aside>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+      var swiper = new Swiper(".mainSwiper", {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        freeMode: {
+          enabled: true,
+          momentum: true,
+          momentumRatio: 1.1,
+          momentumVelocityRatio: 1.1,
+          sticky: true, // 근처 슬라이드에 달라붙게
+        }, speed: 1000
+      });
+    </script>
+  </body>
+</html>
